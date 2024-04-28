@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
+  <title>Not So Boring Webshop </title>
+  
+</head>
+<body>
+  <header>
+    <h1>Not So Boring Webshop</h1>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search products...">
+      <button id="search-button">Search</button>
+    </div>
+    <button id="top-product-button" class="top-product-button">Top Product</button>
+  </header>
+  <main>
+    <div class="content">
+      <section class="product-list">
+        <div class="product-cards"></div>
+      </section>
+      
+    </div>
+    <div class="pagination-container">
+      <button id="prev-button" disabled>Prev</button>
+      <button id="next-button" disabled>Next</button>
+    </div>
+  </main>
+  <div id="sidebar" class="sidebar">
+    <div >
+      <h2 style="text-align: center;">Top Product</h2>
+      <button class="close-button" onclick="closeSidebar()">&times;</button>
+    </div>
+    <div id="top-product-container" class="top-product">
+      <div class="product-card">
+        <img src="" alt="" fullSizeImage>
+        <h2 class="product-name"></h2>
+        <p class="product-rating"></p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
